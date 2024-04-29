@@ -1,0 +1,340 @@
+#nav-drawer {
+  display: none;
+}
+
+.mr-3  {
+  display: none!important;
+}
+
+.navbar-nav {
+  display: none;
+}
+
+body {
+  margin-left: 0 !important;
+}
+
+#region-main > div.logobereich {
+  display: flex;
+  flex-direction: row;
+  margin: 80px 0 80px 0;
+  padding: 0 120px 0 120px;
+}
+#region-main > div.logobereich > div.logobereich_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 50%;
+}
+#region-main > div.logobereich > div.logobereich_2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 50%;
+  margin: 0 0 0 0;
+}
+#region-main > div.logobereich > div.logobereich_2 .logo_02 {
+  margin: 0 70px 0 0;
+}
+@media only screen and (max-width: 991px) {
+  #region-main > div.logobereich {
+    display: flex;
+    flex-direction: column;
+    margin: 80px auto 80px auto;
+    padding: 0;
+    width: 100%;
+  }
+  #region-main > div.logobereich > div.logobereich_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  #region-main > div.logobereich > div.logobereich_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    width: 100%;
+  }
+  #region-main > div.logobereich > div.logobereich_2 .logo_01 {
+    margin: 0 auto 0 auto;
+  }
+  #region-main > div.logobereich > div.logobereich_2 .logo_02 {
+    margin: 60px auto 0 auto;
+  }
+  #region-main > div.logobereich > div.logobereich_2 .logo_03 {
+    margin: 60px auto 0 auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #region-main > div.logobereich {
+    display: flex;
+    flex-direction: column;
+    margin: 80px auto 0 auto;
+    padding: 0;
+    width: 100%;
+  }
+  #region-main > div.logobereich > div.logobereich_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  #region-main > div.logobereich > div.logobereich_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    width: 100%;
+  }
+  #region-main > div.logobereich > div.logobereich_2 .logo_01 {
+    margin: 0 auto 0 auto;
+  }
+  #region-main > div.logobereich > div.logobereich_2 .logo_02 {
+    display: none;
+  }
+  #region-main > div.logobereich > div.logobereich_2 .logo_03 {
+    display: none;
+  }
+}
+#datenschutzbanner p {
+  font-size: 16px;
+}
+#datenschutzbanner {
+  position: fixed;
+  z-index: 1000;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: none;
+  background-color: #f5f5f5;
+  -webkit-box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.4);
+}
+
+
+#datenschutzbanner .orca-download a {
+  top: 5px;
+}
+#datenschutzbanner .orca-download  {
+  left: 0;
+  background-color: #fff;
+  border: 2px solid #a90d00;
+  padding: 0px 20px;
+  border-radius: 20px;
+  display: inline-block;
+}
+a.orca-textlink {
+  text-decoration: underline;
+  font-weight: 600;
+  color: #a90d00;
+}
+
+.all-cookies{
+  margin-bottom:60px;
+}
+
+#datenschutzbanner .flexbox {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+#datenschutzbanner .flexbox div {
+  padding: 15px;
+}
+
+#datenschutzbanner .flexbox span:not(.orca-download) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding: 30px 0px 15px 0px;
+}
+
+#datenschutzbanner .flexbox span .btn {
+  display: inline-block;
+  background-color: #002b44;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+  margin: 0 15px;
+  height: 40px;
+  border: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  cursor: pointer;
+}
+#datenschutzbanner {
+  transition: opacity 0.5s ease;
+}
+
+#datenschutzbanner h3 {
+  font-size: 32px;
+  font-weight: 600;
+}
+#datenschutzbanner .wrapper {
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: "Mont", "Segoe UI", Tahoma, sans-serif;
+}
+#datenschutzbanner .wrapper p {
+  font-size: 22px !important;
+}
+@media screen and (max-width: 667px) {
+  #datenschutzbanner .wrapper p {
+    font-size: 18px !important;
+  }
+}
+#datenschutzbanner .wrapper .cc-compliance {
+  align-items: start;
+}
+#datenschutzbanner .wrapper .cc-compliance .cc-dismiss {
+  height: 40px;
+  margin-right: 15px;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  cursor: pointer;
+  font-size: 22px !important;
+  box-sizing: border-box;
+  left: 0;
+  padding: 0px 20px;
+  border-radius: 20px;
+  display: inline-block;
+}
+#datenschutzbanner .wrapper .ds-flex-right.flexbox {
+  flex-wrap: wrap;
+  min-width: 420px;
+  margin-top: 60px;
+}
+
+#datenschutzbanner .wrapper {
+  max-width: 1606px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+[class*=orca-link], .orca-download {
+  height: 40px;
+  margin-right: 15px;
+  position: relative;
+  overflow: hidden;
+  /*für ripple*/
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  left: -20px;
+  display: inline-block;
+  /*für ripple*/
+  box-sizing: border-box;
+}
+
+#datenschutzbanner .orca-download:hover, .page-kontakt .orca-download:hover {
+  background-color: #002B44;
+}
+
+#datenschutzbanner .orca-download, .page-kontakt .orca-download {
+  border: 2px solid #002B44;
+}
+
+.orca-download:not(.not-yet):hover a, #datenschutzbanner .orca-download:hover a {
+  color: #fff;
+}
+
+.orca-download:not(.not-yet):focus-visible {
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.orca-download:not(.not-yet):focus-within {
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.orca-download:not(.not-yet):hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  background-color: #a90d00;
+  color: #fff;
+}
+
+.orca-link-white:not(.not-yet):focus-within, .orca-download:not(.not-yet):focus-within {
+  box-shadow: 0 4px 8px 0 #00000066;
+}
+
+.orca-download:not(.not-yet):focus-within {
+  background: #d63100 !important;
+}
+.orca-download:not(.not-yet):focus-within a {
+  background: #d63100 !important;
+  border: solid 2px #d63100;
+}
+
+.orca-download a:focus-visible {
+  outline: none;
+}
+
+@media only screen and (max-width: 1399px) {
+  #datenschutzbanner > .flexbox {
+    flex-wrap: wrap;
+  }
+
+  #datenschutzbanner .wrapper .ds-flex-right.flexbox {
+    margin-top: 0px;
+  }
+
+  #datenschutzbanner span.orca-download {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 1399px) {
+  #datenschutzbanner > .flexbox {
+    flex-wrap: wrap;
+  }
+
+  #datenschutzbanner .wrapper .ds-flex-right.flexbox {
+    margin-top: 0px;
+  }
+
+  #datenschutzbanner span.orca-download {
+    margin-bottom: 40px;
+  }
+}
+#datenschutzbanner .orca-download a {
+  color: #002B44;
+}
+
+#datenschutzbanner .orca-download:hover, .page-kontakt .orca-download:hover {
+  background-color: #002B44;
+}
+
+.serious-game .orca-download:hover {
+  background-color: #296307;
+}
+
+#datenschutzbanner .orca-download, .page-kontakt .orca-download {
+  border: 2px solid #002B44;
+}
+
+.orca-download:not(.not-yet):hover a, #datenschutzbanner .orca-download:hover a {
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  #datenschutzbanner .flexbox {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  #datenschutzbanner .flexbox span:not(.orca-download) {
+    margin: 0 auto;
+    padding: 0 0 30px 0;
+  }
+}

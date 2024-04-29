@@ -1,0 +1,30 @@
+{{{output.doctype}}}
+<html {{{output.htmlattributes}}}>
+<head>
+    <title>{{{output.page_title}}}</title>
+    <link rel="shortcut icon" href="{{{ output.favicon }}}" />{{{ output.standard_head_html }}}<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/main.css?v0.17.0-9-ge02e051">
+    <link rel="stylesheet" href="/assets/css/moodle_original_css.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body data-flavour="moodle" {{{bodyattributes}}}>
+    {{{chatsidebar}}}
+    
+    {{> theme_orca/page}}
+                    <script src="/assets/js/cookie.js"></script>
+        
+    </body>
+</html>
+{{#js}}
+M.util.js_pending('theme_boost/loader');
+require(['theme_boost/loader'], function() {
+    M.util.js_complete('theme_boost/loader');
+});
+M.util.js_pending('theme_boost/drawer');
+require(['theme_boost/drawer'], function(drawer) {
+    drawer.init();
+    M.util.js_complete('theme_boost/drawer');
+});
+{{/js}}

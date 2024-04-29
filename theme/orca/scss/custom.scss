@@ -1,0 +1,10 @@
+#nav-drawer{ 
+    display: none!important;
+    .list-group-item[data-key="mycourses"]{
+        display: none;
+    }
+    .list-group-item[data-parent-key="mycourses"]{
+        display: none;
+    }
+    
+}

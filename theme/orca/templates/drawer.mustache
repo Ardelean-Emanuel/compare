@@ -1,0 +1,15 @@
+<div class="drawer-wrapper">
+    <div data-region="drawer-toggle" class="d-inline-block mr-3">
+        <button
+            aria-expanded="{{#navdraweropen}}true{{/navdraweropen}}{{^navdraweropen}}false{{/navdraweropen}}"
+            aria-controls="nav-drawer"
+            type="button"
+            class="drawer-toggle-btn"
+            data-action="toggle-drawer"
+            data-side="left"
+            data-preference="drawer-open-nav"
+        >
+        </button>
+    </div>  
+    {{>theme_orca/nav-drawer}}
+</div>

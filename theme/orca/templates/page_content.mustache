@@ -1,0 +1,14 @@
+<div class="page-content">
+    {{>theme_orca/drawer}}
+
+    <div class="content">
+                {{#hasregionmainsettingsmenu}}
+        <div id="region-main-settings-menu" class="d-print-none {{#hasblocks}}has-blocks{{/hasblocks}}">
+            <div> {{{ output.region_main_settings_menu }}} </div>
+        </div>
+        {{/hasregionmainsettingsmenu}}
+                
+        {{{output.full_header}}}{{{output.main_content}}}
+    </div>
+    {{>theme_orca/rightcol}}
+</div>
